@@ -1,0 +1,5 @@
+conf.ini
+*.py[cod]
+__pycache__
+*.out
+*.sh

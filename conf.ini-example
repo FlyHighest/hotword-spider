@@ -1,0 +1,13 @@
+[database]
+host=*.*.*.*
+port=
+user=
+password=
+database=hotword
+charset=utf8
+
+[mail]
+sender=@com
+pass=
+receiver=
+
