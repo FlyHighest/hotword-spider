@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 import logging
 import logging.config
 
-log_filename = "logging.log"
 logging.basicConfig(level=logging.ERROR,
     format='[%(asctime)s] %(levelname)s [%(funcName)s: %(filename)s, %(lineno)d] %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S',
@@ -56,7 +55,7 @@ def get_zhihu_hotquestion():
             return list_score,list_word
     except Exception as e:
         logging.error(e.args)
-        logging.error('Error: Zihu Exception occured')
+        logging.error('Error: Zihu Exception occured in spider')
         return None,None
 
 def get_weibo_hotword():
@@ -101,7 +100,7 @@ def get_weibo_hotword():
             return list_score,list_word
     except Exception as e:
         logging.error(e.args)
-        logging.error('Error: Sina Weibo Exception occured')
+        logging.error('Error: Sina Weibo Exception occured in spider')
         return None,None
 
         
@@ -136,5 +135,5 @@ def get_baidu_hotword():
             return list_score,list_word
     except Exception as e:
         logging.error(e.args)
-        logging.error('Error: Baidu Exception occured')
+        logging.error('Error: Baidu Exception occured in spider')
         return None,None
